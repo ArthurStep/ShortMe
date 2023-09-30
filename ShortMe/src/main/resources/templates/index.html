@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShortMe | Home</title>
+</head>
+<body>
+<div style="text-align: center;">
+    Welcome to Link Shorter
+<br><br>
+<br><br>
+    Your Link is ready: <p th:text="${userReadyLinkToGo}"></p>
+<br><br>
+
+<form action="/setLink" method="post">
+    <label>
+        <input placeholder="Enter link for short: " name="user-start-link" type="text">
+    </label>
+    <input type="submit">
+</form>
+</div>
+</body>
+</html>
