@@ -1,11 +1,9 @@
 # ShortMe
-Private and secure link shorter.
+Secure and Fast link shorter.
 
 # Features
-* Private, secure
-* Free database with application
-* Fast working
-* Without ad
-* Open source
+* Secure, Fast.
+* Free database with application.
+* Fast redirecting.
 
 Project by Arthur Stepanyan: https://github.com/ArthurStep.
