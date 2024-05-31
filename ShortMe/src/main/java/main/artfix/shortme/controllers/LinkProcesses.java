@@ -19,7 +19,7 @@ public class LinkProcesses {
 
     @RequestMapping("/setLink")
     public String setLink(@RequestParam(value = "user-start-link") String userStartLink, Model model) {
-        String result = setLinkService.setLink(userStartLink);
+        String result = "Your Link is ready: " + setLinkService.setLink(userStartLink);
         model.addAttribute("userReadyLinkToGo", result);
         return "index";
     }
@@ -27,6 +27,6 @@ public class LinkProcesses {
     @RequestMapping("/{data}")
     public String redirectLink(@PathVariable("data") String data) {
         String finalUrl = redirectLinkService.redirectLink(data);
-        return "redirect:"+finalUrl;
+        return "redirect:" + finalUrl;
     }
 }

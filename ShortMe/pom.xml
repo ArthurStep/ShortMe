@@ -10,7 +10,7 @@
     </parent>
     <groupId>main.artfix</groupId>
     <artifactId>ShortMe</artifactId>
-    <version>0.0.2</version>
+    <version>0.1.2</version>
     <name>ShortMe</name>
     <description>ShortMe</description>
     <properties>

@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>ShortMe | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #222;
+            font-family: Arial, sans-serif;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #333;
+            color: #eee;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+    </style>
 </head>
 <body>
 <div style="text-align: center;">
-    Welcome to Link Shorter
-<br><br>
-<br><br>
-    Your Link is ready: <p th:text="${userReadyLinkToGo}"></p>
-<br><br>
-
-<form action="/setLink" method="post">
-    <label>
-        <input placeholder="Enter link for short: " name="user-start-link" type="text">
-    </label>
-    <input type="submit">
-</form>
+    <h3>Welcome to Link Shorter</h3>
+    <h4>Enter link to make it shorter.</h4>
+    <br>
+    <p th:text="${userReadyLinkToGo}"></p>
+    <br>
+    <form action="/setLink" method="post">
+        <label>
+            <input placeholder="Link:" name="user-start-link" type="text">
+        </label>
+        <input type="submit">
+    </form>
 </div>
 </body>
 </html>
